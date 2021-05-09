@@ -13,6 +13,7 @@
     width: 100%;
     z-index: 100;
     position:fixed;
+    color: black;
     
 
 }
@@ -26,6 +27,7 @@
 
 .navbar{
     background-color: deepskyblue;
+    color: black;
 }
 
 .navbar-brand{
@@ -108,7 +110,7 @@ ul{
     height: 15px;
     padding-bottom: 35px;
  
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px 0 black;
     margin-right: 5px;
     margin-left: 2px;
     
