@@ -1,196 +1,102 @@
-@import url(talleres.css);
-@import url(productos.css);
-@import url(arte.css);
+/*@import url(talleres.css);
+/*@import url(productos.css);*/
+/*@import url(arte.css);*/
 @import url(formulario.css);
-@import url(info.css);
+/*@import url(info.css);*/
+@import url(bienvenida.css);
 
 *{
     margin: 0;
     padding: 0;
 }
 
-#navegacion{
+body{
+    background-color: aqua;
+}
+
+#menu{
     width: 100%;
     z-index: 100;
     position:fixed;
-    color: black;
-    
-
 }
 
-.container-fluid img{
-    border: solid 1px black;
+#menu .navbar{
+    background-color: deepskyblue;
+    padding: 0;
+}
+
+#menu .container-fluid img{
+    border: solid 2px black;
     border-radius: 5px;
     width: 60px; 
     height: 60px;
 }
 
-.navbar{
-    background-color: deepskyblue;
-    color: black;
+#menu .container-fluid .navbar-toggler{
+    background: palegoldenrod;
+    color: green;
 }
-
-.navbar-brand{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-size: xx-large;
-    color: black;
-    text-decoration: none;
-
-}
-
-
-.carrusel img{
-    height: 300px;
-    padding-top: 74px;
-   
-}
-
-
-
-
-
-
-ul{
+/*Nombre pagina*/
+#menu .navbar-brand{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
-    
-    
-    
-
+    color: black;
+}
+/*Elementos menu*/
+#menu .navbar-nav .nav-item a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    color: black;
+    padding-top: 21px;
+    padding-bottom: 22px;
 }
 
-
-
-
-
+#menu .navbar-nav .nav-item a:hover{
+    background: palegoldenrod;
+    transition: 0.8s;
+    margin-right: 10px;
+}
+#menu .navbar-nav .nav-item .dropdown-menu{
+    background: deepskyblue;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: auto;
+}
+/*Botón Buscar*/
 .d-flex button{
-    background: white;
-    border: solid 1px rgba(0, 0, 0, 0.288);
-    height: 40px;
-
-}
-.d-flex button:hover{
-    background: rgba(255, 151, 113, 0.541);
-    border: none;
-
+    background: palegoldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    height: 45px;
+    border: 1px solid green;
 }
 
-.contenedor{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  margin: 7%;
-
-    
+#menu .d-flex button:hover{
+    background: green;
+    border: 1px solid white;
+    color: palegoldenrod;
 }
 
-.contenedor img{
-    width: 35%;
-    height: 35vh;
-    
+/*Carrusel*/
+.carrusel{
+    transform: translateY(-16px);
 }
-
-.textos{
-    width: 60%;
-    text-align: justify;
+.carrusel img{
+    height: 600px;
+    padding-top: 86px;
 }
-
-.textos h3{
-    margin-bottom: 15px;
-    margin-top: 40px;
-}
-
-.textos h3 span{
-    background: #073561;
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    height: 15px;
-    padding-bottom: 35px;
- 
-    box-shadow: 0 0 10px 0 black;
-    margin-right: 5px;
-    margin-left: 2px;
-    
-}
-
-
-
-
-
-
-
-.textos p{
-    padding: 0px 0px 30px 15px;
-    font-weight: 250;
-    text-align: justify;
-}
-
-
-
-#wave{
-    position: absolute;
-  
-    width: 100%;
-  background-color: transparent;
-}
-
 
 footer{
-    background: #414141;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
+    height: 100px;
 }
 
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
-
-.content-foo{
+footer .contenedor{
+    background: deepskyblue;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    padding-bottom: 30px;
 }
 
-.content-foo h4{
-    color: #fff;
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-   
+footer .contenedor p{
+    padding-top: 50px;
 }
-
-.content-foo p{
-    color: #ccc;
-}
-
-.titulo-final{
-    text-align: center;
-    font-size: 24px;
-    margin: 20px 0 0 0;
-    color: #9e9797;
-}
-
-.btn-dolar{
-    background-color:brown;
-    margin-top: 30px;
-    margin-left: 90px;
-    color: white;
-    border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    box-shadow: 0px 1px 5px 1px rgb(0 0 0 / 50%);
-    transition: all 0.2s;
-}
-
-#valor_dolar{
-    margin-left: 100px;
-}
-
-
-
