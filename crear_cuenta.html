@@ -55,7 +55,7 @@
 
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="inicio_sesion.html">Iniciar sesión</a></li>
-                                <li><a class="dropdown-item" href="crear_cuenta.html">Crear Cuenta</a></li>
+                                <li><a class="dropdown-item" href="registro.html">Crear Cuenta</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -69,11 +69,11 @@
         </nav>
     </section>
 
-    <!--sección de formulario inicio de sesión-->
+    <!--sección de formulario creación de cuenta-->
     <section id="formulario">
-        <form class="form-registro" action="" method="post">
+        <form class="form-registro" action="" method="post" onsubmit=" return validarFormulario()">
 
-            <h2 class="form-titulo">Iniciar Sesión</h2>
+            <h2 class="form-titulo">Crear Cuenta</h2>
 
             <div class="contenedor-input">
                 <div class="row">
@@ -83,24 +83,28 @@
                 </div>
 
                 <div class="row">
+                    <h2 class="col-12">Nombre de artista:</h2>
+                    <input class="col-xl" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre..."
+                        required minlength="5">
+                </div>
+
+                <div class="row">
                     <h2 class="col-12">Contraseña:</h2>
                     <input class="col-xl" type="password" name="txtPass" id="" placeholder="Ingrese su contraseña..."
                         required minlength="5" maxlength="10">
                 </div>
-            </div>
 
-            <div class="linkini">
-                <div class="sin-pass">
-                    <h5><a href="#0">¿Has olvidado tu contraseña?</a></h5>
+                <div class="linkini">
+                    <input class="btn-registrar" type="submit" value="Registrar">
+
+                    <hr>
+                    <h7>¿Ya tienes una cuenta?</h7>
+                    <a href="inicio_sesion.html">Iniciar Sesión</a>
                 </div>
-
-                <input class="btn-registrar" type="submit" value="Ingresar">
-                <hr style="background-color: black;">
-
-                <h7>¿No tienes cuenta?</h7>
-                <a href="crear_cuenta.html">Crear Cuenta</a>
             </div>
         </form>
+
+        <script src="js/usuario.js"></script>
     </section>
 
     <!--Scripts-->
