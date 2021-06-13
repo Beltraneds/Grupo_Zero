@@ -4,6 +4,7 @@
 @import url(formulario.css);
 /*@import url(info.css);*/
 @import url(bienvenida.css);
+@import url(galeria_index.css);
 
 *{
     margin: 0;
@@ -79,6 +80,7 @@ body{
 /*Carrusel*/
 .carrusel{
     transform: translateY(-16px);
+    width: 100%;
 }
 .carrusel img{
     height: 600px;
