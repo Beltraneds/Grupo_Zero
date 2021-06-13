@@ -79,11 +79,12 @@ body{
 
 /*Carrusel*/
 .carrusel{
+    padding-top: 20px;
     transform: translateY(-16px);
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 .carrusel img{
-    height: 600px;
     padding-top: 86px;
 }
 
