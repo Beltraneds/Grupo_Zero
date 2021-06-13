@@ -81,7 +81,7 @@ body{
 .carrusel{
     padding-top: 20px;
     transform: translateY(-16px);
-    width: 90%;
+    width: 70%;
     margin: auto;
 }
 .carrusel img{
