@@ -1,0 +1,19 @@
+.galeria{
+
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.galeria h3{
+    text-align: center;
+}
+
+.galeria .card img{
+    border-radius: 10px;
+    height: auto;
+}
+
+.galeria .card-body{
+    height: 455px;
+    background-color: rgba(195, 255, 85, 0.589);
+}
