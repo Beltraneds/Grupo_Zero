@@ -81,6 +81,14 @@
     color: white;
     /*15px Arriba - 0px Derecha - 10px Abajo - 0px Izquierda*/
     margin: 15px 0px 10px 0px;
+    font-family: sans-serif;
+}
+
+#formulario .boton .btn-registrar:hover{
+    background-color: palegoldenrod;
+    border: 2px solid rgba(145, 47, 236, 0.884);
+    font-weight: bold;
+    color: purple;
 }
 
 #formulario .row h2{
