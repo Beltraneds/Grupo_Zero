@@ -11,4 +11,4 @@ class usuario{
     imprimir(){
         return 'Nombre: ' +this.nombre;
     }
-}
+} 

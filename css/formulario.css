@@ -26,6 +26,7 @@
 
 #formulario{
     padding-top: 200px;
+    font-size: 20px;
 }
 
 #formulario .linkini{
@@ -73,12 +74,22 @@
     color: purple;
 }
 
+#formulario .boton .btn-registrar{
+    background-color: rgba(145, 47, 236, 0.884);
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    /*15px Arriba - 0px Derecha - 10px Abajo - 0px Izquierda*/
+    margin: 15px 0px 10px 0px;
+}
+
 #formulario .row h2{
     padding-top: 5px;
     margin-top: 10px;
     color: black;
     font-size: 20px;
 }
+
 #formulario input{
     padding: 10px;
 }
@@ -86,4 +97,5 @@
 
 .col-xl{
     border-radius: 5px; 
+    font-size: medium;
 }

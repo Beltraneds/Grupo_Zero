@@ -13,7 +13,7 @@
 </head>
 
 <body style="background-color: palegoldenrod">
-    <!--barra de navegación/menú-->
+    <!--barra de navegacion-->
     <section id="menu">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -69,52 +69,51 @@
         </nav>
     </section>
 
-    <!--seccion formulario-->
-    <section id="formulario">
 
-        <form class="form-registro" action="" method="post" onsubmit="">
 
-            <h2 class="form-titulo">Contacto General</h2>
+    <div class="contenido">
 
-            <div class="contenedor-input">
-                <div class="mb-3">
-                    <label for="txtNombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="txtNombre" placeholder=" Ingrese su nombre" required>
-                </div>
+        <img src="img/escultura.jpg" class="img-fluid" alt="...">
 
-                <div class="mb-3">
-                    <label for="txtAsunto" class="form-label">Asunto:</label>
-                    <input type="text" class="form-control" id="txtAsunto" placeholder=" Ingrese asunto" required>
-                </div>
+        <div class="informacion">
 
-                <div class="mb-3">
-                    <label for="txtEmail" class="form-label">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="txtEmail"
-                        placeholder=" Ingrese correo: name@example.com" required>
-                </div>
+            <input class="btn-dolar" type="button" value="Dolar" onclick="recuperaDolar() ">
+            <div id="valor_dolar"></div>
+            <script>
+                function recuperaDolar() {
+                    fetch("https://mindicador.cl/api/dolar")
+                        .then(function (response) {
+                            if (response.status != 200) {
+                                alert("no pudo conectar con el servicio");
+                                return;
+                            }
+                            response.json().then(function (data) {
+                                console.log(data);
+                                var dolar = data.serie[0].valor;
+                                document.getElementById('valor_dolar').innerHTML = "$" + dolar + " CLP";
+                            })
+                        })
+                }
+            </script>
 
-                <div class="mb-3">
-                    <label for="txtMensaje" class="form-label">Mensaje:</label>
-                    <textarea class="form-control" id="txtMensaje" placeholder="Escriba algo..." rows="5"
-                        required></textarea>
-                </div>
+            <button id="btn">
+                <h5>Agregar al carrito</h5>
+            </button>
 
-                <div class="boton">
-                    <input class="btn-registrar" type="submit" value="Enviar">
-                </div>
-            </div>
-        </form>
-    </section>
+        </div>
+    </div>
 
+
+    <!--pie de página-->
+    <footer>
+        <div class="contenedor">
+            <p>Grupo Cero</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-
-
-
-
 </body>
 
 </html>
