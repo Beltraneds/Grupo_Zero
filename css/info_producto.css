@@ -1,6 +1,4 @@
 .galeria{
-
-    padding-top: 100px; 
     padding-bottom: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -14,6 +12,7 @@
 }
 
 .galeria .card-body{
-    height: 455px;
+    height: auto;
     background-color: rgba(195, 255, 85, 0.589);
+    border: solid 1px red;
 }
