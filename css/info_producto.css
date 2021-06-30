@@ -1,17 +1,17 @@
-.galeria{
+.info{
     padding-bottom: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.galeria h3{
+.info h2{
     text-align: center;
 }
 
-.galeria .card img{
+.info .card img{
     border-radius: 10px;
     height: auto;
 }
 
-.galeria .card-body{
+.info .card-body{
     height: auto;
     background-color: rgba(195, 255, 85, 0.589);
     border: solid 1px red;

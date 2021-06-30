@@ -3,6 +3,7 @@
 @import url(bienvenida.css);
 @import url(galeria_index.css);
 @import url(info_producto.css);
+@import url(blog.css);
 
 *{
     margin: 0;
