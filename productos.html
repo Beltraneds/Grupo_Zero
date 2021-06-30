@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="img/Grupo Cero.jpg">
 </head>
 
+
 <body style="background-color: palegoldenrod">
     <!--barra de navegación/menú-->
     <section id="menu">
@@ -36,7 +37,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="">Productos</a>
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
 
                         <li class="nav-item">
@@ -69,75 +70,94 @@
         </nav>
     </section>
 
-    <!--Información del producto-->
-    <div class="info">
-        <h2>Información del Producto</h2>
-        <div class="row">
-            <div class="col-md">
-                <div class="card shadow">
-                    <img src="img/escultura.jpg" height="280px" alt="">
+
+
+    <section id="tarjetas">
+        <div>
+            <center>
+                <h1>Nuestros productos</h1>
+            </center>
+        </div>
+
+        <div class="titulo">
+            <h1>Pinturas</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="img/Campo_de_trigo_con_cipreces.PNG" alt="" width="400" height="300">
+                <h4>Campo de trigo con cipreces</h4>
+                <a href="campo.html">Leer más</a>
+            </div>
+
+            <div class="card">
+                <img src="img/el_beso.jpg" alt="" width="400" height="300">
+                <h4>El beso</h4>
+                <a href="beso.html">Leer más</a>
+            </div>
+
+            <div class="card">
+                <img src="img/la_noche_estrellada.PNG" alt="" width="400" height="300">
+                <h4>La noche estrellada</h4>
+                <a href="noche.html">Leer más</a>
+            </div>
+
+            <div class="card">
+                <img src="img/los_amantes.PNG" alt="" width="400" height="300">
+                <h4>Los amantes</h4>
+                <a href="amantes.html">Leer más</a>
+            </div>
+            <div class="card">
+                <img src="img/obra_picasso.jpg" alt="" width="400" height="300">
+                <h4>Obra de picasso</h4>
+                <a href="obraPicasso.html">Leer más</a>
+            </div>
+
+            <div class="card">
+                <img src="img/Terraza de cafe por la noche.PNG" alt="" width="400" height="300">
+                <h4>Terraza de cafe por la noche</h4>
+                <a href="terraza.html">Leer más</a>
+            </div>
+
+            <div class="card">
+                <img src="img/Pintura.jpg" alt="" width="400" height="300">
+                <h4>Un atardecer de chubascos</h4>
+                <a href="chubascos.html">Leer más</a>
+            </div>
+
+            <div class="card">
+                <img src="img/viejo_guitarrista.jpg" alt="" width="400" height="300">
+                <h4>Viejo Guitarrista</h4>
+                <a href="viejo.html">Leer más</a>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <h1>Esculturas</h1>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <img src="img/escultura.jpg" alt="" width="400" height="300">
+                <h4>El David (Miguel Ángel)</h4>
+                <a href="escultura.html">Leer más</a>
+            </div>
+
+            <div class="titulo">
+                <h1>Orfebreria</h1>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <img src="img/orfebreria.jpg" alt="" width="400" height="300">
+                    <h4>Orfebreria</h4>
+                    <a href="orfebreria.html">Leer más</a>
                 </div>
             </div>
 
-            <div class="col-xl">
-
-                <div class="card-body card shadow">
-                    <h3>"El David"</h3>
-                    <h5>HISTORIA: </h5>
-                    <p class="card-text">
-                        Esta escultura representa al rey David bíblico antes de enfrentarse con Goliat.
-                    </p>
-
-                    <h5>DESCRIPCIÓN: </h5>
-                    <p class="card-text">
-                        Escultura de mármol tallada a mano por el artista Miguel Ángel Buonarroti.
-                    </p>
-
-                    <h5>TÉCNICA USADA: </h5>
-                    <p class="card-text">
-                        Escultura en mármol.
-                    </p>
-
-                    <h5>PRECIO: </h5>
-                    <p class="card-text">
-                        US $95.00
-                    </p>
-                </div>
-
-                <input type="button" value="Valor del Dolar" onclick="recuperaDolar()">
-                <div id="valor_dolar"></div>
-                <script>
-                    function recuperaDolar() {
-                        fetch("https://mindicador.cl/api/dolar")      /*fetch() --> permite dirigirse a una direccion y recuperar info desde ella*/
-                            .then(function (response) {
-                                //status 200 --> 'OK'
-                                if (response.status != 200) {
-                                    alert("No pudo contectar con el servidor");
-                                    return;
-                                }
-                                response.json().then(function (data) {
-                                    console.log(data);
-                                    var dolar = Math.round(data.serie[0].valor);
-                                    document.getElementById('valor_dolar').innerHTML =  "$"+dolar+" pesos chilenos";
-                                })
-                            })
-                    }
-                </script>
-
-            </div>
         </div>
-    </div>
 
-    <!--pie de página-->
-    <footer>
-        <div class="contenedor">
-            <p>Grupo Cero</p>
+        <div class="titulo">
+            <h1>Pronto mucho más...</h1>
         </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>

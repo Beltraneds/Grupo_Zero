@@ -69,61 +69,40 @@
         </nav>
     </section>
 
-    <!--Información del producto-->
-    <div class="info">
-        <h2>Información del Producto</h2>
+    <!--Información del artista-->
+    <div class="galeria">
+        <h2>Información del Artista</h2>
         <div class="row">
             <div class="col-md">
                 <div class="card shadow">
-                    <img src="img/escultura.jpg" height="280px" alt="">
+                    <img src="img/VanGoh" height="280px" alt="">
                 </div>
             </div>
 
             <div class="col-xl">
 
                 <div class="card-body card shadow">
-                    <h3>"El David"</h3>
+                    <h3>"Vincent Van Gohg"</h3>
                     <h5>HISTORIA: </h5>
                     <p class="card-text">
-                        Esta escultura representa al rey David bíblico antes de enfrentarse con Goliat.
+                        Vincent Willem van Gogh fue un pintor neerlandés, uno de los principales exponentes del
+                        postimpresionismo.​Pintó unos 900 cuadros y realizó más de 1600 dibujos. Una figura central
+                        en su vida fue su hermano menor Theo, marchante de arte en París, quien le prestó apoyo
+                        financiero de manera continua y desinteresada.
                     </p>
 
-                    <h5>DESCRIPCIÓN: </h5>
+                    <h5>NACIMIENTO: </h5>
                     <p class="card-text">
-                        Escultura de mármol tallada a mano por el artista Miguel Ángel Buonarroti.
+                        30 de marzo de 1853, Zundert, Países Bajos
+
                     </p>
 
-                    <h5>TÉCNICA USADA: </h5>
+                    <h5>FALLECIMIENTO: </h5>
                     <p class="card-text">
-                        Escultura en mármol.
+                        29 de julio de 1890, Auvers-sur-Oise, Francia
                     </p>
 
-                    <h5>PRECIO: </h5>
-                    <p class="card-text">
-                        US $95.00
-                    </p>
                 </div>
-
-                <input type="button" value="Valor del Dolar" onclick="recuperaDolar()">
-                <div id="valor_dolar"></div>
-                <script>
-                    function recuperaDolar() {
-                        fetch("https://mindicador.cl/api/dolar")      /*fetch() --> permite dirigirse a una direccion y recuperar info desde ella*/
-                            .then(function (response) {
-                                //status 200 --> 'OK'
-                                if (response.status != 200) {
-                                    alert("No pudo contectar con el servidor");
-                                    return;
-                                }
-                                response.json().then(function (data) {
-                                    console.log(data);
-                                    var dolar = Math.round(data.serie[0].valor);
-                                    document.getElementById('valor_dolar').innerHTML =  "$"+dolar+" pesos chilenos";
-                                })
-                            })
-                    }
-                </script>
-
             </div>
         </div>
     </div>
